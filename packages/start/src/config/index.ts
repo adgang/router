@@ -237,6 +237,7 @@ function setTsrDefaults(config: TanStackStartOutputConfig['tsr']) {
       config?.routesDirectory ?? path.join(appDirectory, 'routes'),
     generatedRouteTree:
       config?.generatedRouteTree ?? path.join(appDirectory, 'routeTree.gen.ts'),
+    addExtensions: navigator.userAgent.startsWith('Deno'),
   }
 }
 
